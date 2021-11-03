@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: blue;
+}
+
+#ul-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+form{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    position: relative;
+}
+
+
+input[type=text]{
+    width: 100%;
+    padding: 1rem 4rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+    font-size: larger;
+    text-align: center;
+}
+
+.fa-magic{
+    position: absolute;
+    font-size: 37px;
+    right: 4%;
+    bottom: 30%;
+    color: #5a3838;
+    background-color: #f2f839;
+    border-radius: 70%;
+}
+
+.fa-hat-wizard{
+    position: absolute;
+    font-size: 39px;
+    bottom: 30%;
+    left: 4%;
+    color: #4842fc;
+    background: yellow;
+    border-radius: 80%;
+}
+
+
+li{
+    margin: 2rem;
+    width: 250px;
+    height: 400px;
+    text-align: center;
+    list-style: none;
+    border-radius: 5px;
+    /* color: #d9cbd5; */
+}
+
+img{
+    width: 215px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+
+/* ************************ */
+/* MEDIA QUERY */
+@media screen and (max-width: 600px)  { 
+    form{
+        width: 90%;
+    }
+    .fa-magic,
+    .fa-hat-wizard{
+        display: none;
+    }
+    
+    input[type=text]{
+        width: 100%;
+        padding: 1rem 0px;
+    }
+}
+
+@media screen and (min-width: 451px)  { 
+    .fa-magic,
+    .fa-hat-wizard{
+        display: inline-block;
+    }
+}
+
+
+@media screen and (min-width: 551px)  { 
+    form{
+        width: 80%;
+    }
+   
+    
+}
+
+@media screen and (min-width: 650px)  { 
+    form{
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 800px)  { 
+     form{
+        width: 50%;
+    }    
+}
+@media screen and (min-width: 1000px)  { 
+    form{
+        width: 40%;
+    }
+   
+}
+
+.red{
+    background-image: linear-gradient(to bottom right, #ff000096, #f3e400);
+}
+
+.green{
+    background-image: linear-gradient(rgb(36, 224, 36), rgb(122, 122, 116));
+}
+
+.blue{
+    background-image: linear-gradient(to top left, rgb(12, 22, 158), rgb(139, 85, 49));
+    
+}
+
+.black{
+    background-image: linear-gradient(rgb(250, 192, 3), rgb(0, 0, 0));
+   
+}
+
